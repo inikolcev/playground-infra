@@ -16,5 +16,5 @@ spec:
         app: worker
     spec:
       containers:
-      - image: 49296354115.dkr.ecr.eu-central-1.amazonaws.com/votingapp-worker:latest
+      - image: 849296354115.dkr.ecr.eu-central-1.amazonaws.com/votingapp-worker:latest
         name: worker
