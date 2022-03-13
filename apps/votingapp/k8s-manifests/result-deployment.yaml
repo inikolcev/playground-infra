@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: result
+  name: result
+  namespace: vote
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: result
+  template:
+    metadata:
+      labels:
+        app: result
+    spec:
+      containers:
+      - image: 849296354115.dkr.ecr.eu-central-1.amazonaws.com/votingapp-result:latest
+        name: result
+        ports:
+        - containerPort: 80
+          name: result
