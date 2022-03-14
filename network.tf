@@ -59,7 +59,7 @@ resource "aws_subnet" "public-eu-1b" {
   tags = {
     "name"                       = "public-eu-1b"
     "kubernetes.io/role/elb"     = "1"
-    "kubernetes.io/cluster/demo" = "owned"
+    "kubernetes.io/cluster/eks-cluster" = "owned"
   }
 }
 
